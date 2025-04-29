@@ -1,4 +1,7 @@
 # in .gitignore
 *.db
 /output/
-/wind_turbines.db
+/wind_turbines.db__pycache__/
+*.pyc
+wind_turbines.db
+output/
