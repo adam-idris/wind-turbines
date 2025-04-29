@@ -1,0 +1,4 @@
+# in .gitignore
+*.db
+/output/
+/wind_turbines.db
