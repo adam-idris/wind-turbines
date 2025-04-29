@@ -1,5 +1,28 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+ENV/
+env/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# SQLite database
 wind_turbines.db
-*.log
-.env/venv/
-.ipynb_checkpoints/
-pycache/*.py[cod] *$py.class
+
+# Pipeline outputs
+output/
+output/plots/
+
+# VSCode / IDE settings
+.vscode/
+.idea/
+
+# pytest cache
+.pytest_cache/
