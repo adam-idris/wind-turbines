@@ -1,0 +1,13 @@
+import pandas as pd
+from pipeline.anomaly import flag_daily_anomalies
+
+def test_flag_daily_anomalies():
+    dates = pd.date_range('2025-01-01', periods=31).date
+    means = list(range(31))
+    df = pd.DataFrame({
+        'date': dates,
+        'turbine_id': [1]*31,
+        'mean_output': means
+    })
+    out = flag_daily_anomalies(df)
+    assert out['anomaly'].sum() == 0
