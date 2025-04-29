@@ -84,7 +84,10 @@ cd wind_turbine_pipeline
 python3 -m venv venv
 source venv/bin/activate
 
-# Install dependencies
+# Install in editable mode (pulls install_requires from setup.py)
+pip install -e .
+
+# Or install dependencies
 pip install -r requirements.txt
 ```
 
@@ -105,7 +108,7 @@ pytest
 ### Run the Full Pipeline
 ```bash
 # Default: reads from ./data, writes to ./output and wind_turbines.db
-ypython -m pipeline.main
+python -m pipeline.main
 ```
 Override paths:
 ```bash
