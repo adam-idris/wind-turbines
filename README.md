@@ -32,6 +32,7 @@ wind_turbine_pipeline/
 ├── anomaly_inspection.py      # Standalone script for plotting anomalies
 ├── tests/                      # pytest suite for unit testing
 ├── requirements.txt           # Project dependencies
+├── visual_notebook.ipynb      # Some analyses of results using visualisations
 └── wind_turbines.db           # SQLite database (auto-created)
 ```
 
@@ -46,7 +47,7 @@ wind_turbine_pipeline/
    - **Power-curve**: linear regression residuals of power vs. wind speed.  
    - **Machine-learning**: IsolationForest on multivariate features.  
 6. **Persist** cleaned data and flagged summaries to CSV and SQLite (`wind_turbines.db`).  
-7. **Visualise** with `anomaly_inspection.py`, producing per-turbine plots that highlight each anomaly type.
+7. **Visualise** with `anomaly_inspection.py`, producing per-turbine plots that highlight each anomaly type and general analyses using `visual_notebook.ipynb`.
 
 ---
 

@@ -1,0 +1,5 @@
+wind_turbines.db
+*.log
+.env/venv/
+.ipynb_checkpoints/
+pycache/*.py[cod] *$py.class
